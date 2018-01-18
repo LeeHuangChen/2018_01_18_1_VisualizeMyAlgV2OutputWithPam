@@ -110,7 +110,9 @@ def graphModuleAndPam(fileInfo):
 	moduleDict=readModules(moduledir)
 	pamDict=readPamMappings(pamdir)
 
-	graph.graphModuleandPamComparison(moduleDict,pamDict)
+
+	family=inputfile.replace(".txt","")
+	graph.graphModuleandPamComparison(moduleDict,pamDict,family)
 
 
 def main():
